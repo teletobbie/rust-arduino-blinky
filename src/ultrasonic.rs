@@ -33,5 +33,11 @@ pub fn measure_distance<T: OutputPin, U: InputPin>(
     // Divide by 2 because sound travels to object and back
     let distance_cm = pulse_duration / 58;
     
-    distance_cm
+    // Filter out invalid readings (sensor effective range: 2-400cm)
+    // Returns 0 for out-of-range measurements
+    if distance_cm < 2 || distance_cm > 400 {
+        0
+    } else {
+        distance_cm
+    }
 }

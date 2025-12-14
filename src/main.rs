@@ -2,7 +2,6 @@
 #![no_main]
 
 use panic_halt as _;
-use embedded_hal::digital::{InputPin, OutputPin};
 
 mod tm1638;
 mod ultrasonic;
