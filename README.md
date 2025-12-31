@@ -42,10 +42,12 @@ The wiring connections are as follows:
 
 ##### POWER CONNECTIONS:
 Arduino 5V → Breadboard + power rail
+
 Arduino GND → Breadboard - power rail
 
 ##### HC-SR04:
 VCC → + power rail
+
 GND → - power rail
 
 ##### TM1638:
