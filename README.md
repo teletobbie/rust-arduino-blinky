@@ -41,13 +41,11 @@ The wiring connections are as follows:
 | D7   | TM1638 STB pin                             |
 
 ##### POWER CONNECTIONS:
-Arduino 5V → Breadboard + power rail
-
+Arduino 5V → Breadboard + power rail  
 Arduino GND → Breadboard - power rail
 
 ##### HC-SR04:
-VCC → + power rail
-
+VCC → + power rail  
 GND → - power rail
 
 ##### TM1638:
