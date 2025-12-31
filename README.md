@@ -29,23 +29,26 @@ For this project, you will need the following components:
 The wiring connections are as follows:
 
 ##### ARDUINO UNO PINS:
-D13 → built-in LED
-D12 → LED2 (+ long leg) → 220Ω resistor → GND
-D11 → HC-SR04 TRIG pin
-D10 → HC-SR04 ECHO pin
-D9  → TM1638 CLK pin
-D8  → TM1638 DIO pin
-D7  → TM1638 STB pin
+
+| Pin  | Connection Description                     |
+|------|--------------------------------------------|
+| D13  | built-in LED                               |
+| D12  | LED2 (+ long leg) → 220Ω resistor → GND    |
+| D11  | HC-SR04 TRIG pin                           |  
+| D10  | HC-SR04 ECHO pin                           |
+| D9   | TM1638 CLK pin                             |
+| D8   | TM1638 DIO pin                             |
+| D7   | TM1638 STB pin                             |
 
 ##### POWER CONNECTIONS:
 Arduino 5V → Breadboard + power rail
 Arduino GND → Breadboard - power rail
 
-#### HC-SR04:
+##### HC-SR04:
 VCC → + power rail
 GND → - power rail
 
-#### TM1638:
+##### TM1638:
 VCC → + power rail  
 GND → - power rail
 
@@ -53,7 +56,7 @@ GND → - power rail
 
 ![image](rust-arduino-blinky.png)
 
-**Note:** tinkercad does not have the TM1638 module available, so the display is not shown in the diagram.
+**Note:** tinkercad does not have the TM1638 module available, so I added a 7-segment display to represent the TM1638 display.
 
 [`avr-hal` README]: https://github.com/Rahix/avr-hal#readme
 [`ravedude`]: https://crates.io/crates/ravedude
